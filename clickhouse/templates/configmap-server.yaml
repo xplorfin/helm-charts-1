@@ -5,6 +5,13 @@ metadata:
   labels:
     app: clickhouse-server-config
 data:
+  macros.xml: |
+    <yandex>
+      <macros>
+        <shard>shard0</shard>
+        <replica>replica0</replica>
+      </macros>
+    </yandex>
   system.xml: |-
     <yandex>
       <listen_host>::</listen_host>
